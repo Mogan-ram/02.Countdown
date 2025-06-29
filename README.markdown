@@ -64,12 +64,8 @@ countdown-timer/
 - **Visual Effects**: Blinking animations with red glow for finished timers.
 - **Custom Styling**: Glassmorphism design with a gradient background for enhanced aesthetics.
 
-### Submission Details
-- **GitHub Repository**: [Insert your GitHub repo link here]
-- **Live Demo**: [Insert live demo link if hosted, e.g., on GitHub Pages]
-- **Contact**: For queries, reach out to [Your Email].
 
-### Future Enhancements
+### Future Enhancements In Plan
 - Add sound effects when a timer reaches zero.
 - Implement a reset button for individual timers in the sidebar.
 - Allow users to save timers to local storage for persistence across sessions.
