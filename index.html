@@ -4,42 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Added Google Font 'Poppins' for a modern look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Countdown Timer</title>
     <link rel="stylesheet" href="style.css">
-    <title>Dynamic Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-container">
         <h1>Countdown Timer</h1>
-
-        <!-- Main Countdown Form -->
         <form id="main-countdown-form">
             <input type="datetime-local" id="main-countdown-date" required>
             <button type="submit">Start Countdown</button>
         </form>
-
-        <!-- Main Countdown Display - Restructured for better styling -->
         <div id="main-countdown-display">
-            <div><span class="main-days">00</span><label>Days</label></div>
-            <div><span class="main-hours">00</span><label>Hours</label></div>
-            <div><span class="main-minutes">00</span><label>Minutes</label></div>
-            <div><span class="main-seconds">00</span><label>Seconds</label></div>
+            <div>
+                <span class="main-days">00</span>
+                <label>Days</label>
+            </div>
+            <div>
+                <span class="main-hours">00</span>
+                <label>Hours</label>
+            </div>
+            <div>
+                <span class="main-minutes">00</span>
+                <label>Minutes</label>
+            </div>
+            <div>
+                <span class="main-seconds">00</span>
+                <label>Seconds</label>
+            </div>
         </div>
         <div id="main-countdown-message"></div>
-
-        <!-- NEW: Button to toggle the sidebar -->
         <button id="toggle-sidebar-btn">Show Multiple Timers</button>
     </div>
 
-    <!-- Multiple Countdown Sidebar (Initially hidden) -->
     <div id="sidebar" class="hidden">
         <h2>Multiple Timers</h2>
         <form id="countdown-form">
-            <input type="text" id="countdown-name" placeholder="Event Name" required>
+            <input type="text" id="countdown-name" placeholder="Timer Name" required>
             <input type="datetime-local" id="countdown-date" required>
             <button type="submit">Add Timer</button>
         </form>
