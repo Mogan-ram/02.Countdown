@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
 </head>
 
 <body>
     <div class="main-container">
         <h1>Countdown Timer</h1>
         <form id="main-countdown-form">
-            <input type="datetime-local" id="main-countdown-date" required>
+            <input type="datetime-local" id="main-countdown-date" aria-label="Select countdown date and time" required>
             <button type="submit">Start Countdown</button>
+            <button type="button" id="reset-main-countdown" aria-label="Reset main countdown">Reset</button>
         </form>
         <div id="main-countdown-display">
             <div>
@@ -35,14 +36,14 @@
             </div>
         </div>
         <div id="main-countdown-message"></div>
-        <button id="toggle-sidebar-btn">Show Multiple Timers</button>
+        <button id="toggle-sidebar-btn" aria-label="Toggle multiple timers sidebar">Show Multiple Timers</button>
     </div>
 
     <div id="sidebar" class="hidden">
         <h2>Multiple Timers</h2>
         <form id="countdown-form">
-            <input type="text" id="countdown-name" placeholder="Timer Name" required>
-            <input type="datetime-local" id="countdown-date" required>
+            <input type="text" id="countdown-name" placeholder="Timer Name" aria-label="Enter timer name" required>
+            <input type="datetime-local" id="countdown-date" aria-label="Select timer date and time" required>
             <button type="submit">Add Timer</button>
         </form>
         <div id="countdowns-container"></div>
